@@ -1,7 +1,6 @@
 import { Stats } from "@/components/boletin/stats"
 import { ConvocatoriasInternacionales } from "@/components/boletin/internacionales"
 import { ConvocatoriasNacionales } from "@/components/boletin/nacionales"
-import { Footer } from "@/components/boletin/footer"
 import { Navbar } from "@/components/colmayor/navbar"
 import { FooterColmayor } from "@/components/colmayor/footer"
 
@@ -14,7 +13,6 @@ export default function Page() {
         <ConvocatoriasInternacionales />
         <div className="border-t border-border" />
         <ConvocatoriasNacionales />
-        <Footer />
       </main>
       <FooterColmayor />
     </div>
