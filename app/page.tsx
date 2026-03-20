@@ -1,4 +1,3 @@
-import { Cover } from "@/components/boletin/cover"
 import { Stats } from "@/components/boletin/stats"
 import { ConvocatoriasInternacionales } from "@/components/boletin/internacionales"
 import { ConvocatoriasNacionales } from "@/components/boletin/nacionales"
@@ -11,7 +10,6 @@ export default function Page() {
     <div className="min-h-screen flex flex-col bg-background font-sans">
       <Navbar />
       <main className="flex-1">
-        <Cover />
         <Stats />
         <ConvocatoriasInternacionales />
         <div className="border-t border-border" />

@@ -11,7 +11,7 @@ export function Stats() {
           <p className="text-sm text-muted-foreground mt-1 font-sans">Convocatorias Nacionales</p>
         </div>
         <div className="col-span-2 md:col-span-1">
-          <p className="text-5xl font-bold text-secondary-foreground">2</p>
+          <p className="text-5xl font-bold text-secondary">2</p>
           <p className="text-sm text-muted-foreground mt-1 font-sans">Otras Convocatorias Internacionales</p>
         </div>
       </div>

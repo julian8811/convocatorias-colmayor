@@ -31,7 +31,7 @@ const colsRight = [
 
 export function FooterColmayor() {
   return (
-    <footer style={{ backgroundColor: "#2d3748", color: "#cbd5e0" }} className="font-sans">
+    <footer className="font-sans bg-colmayor-bar text-slate-300">
       {/* Main footer */}
       <div className="max-w-6xl mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-4 gap-8">
         {/* Brand */}
@@ -44,35 +44,34 @@ export function FooterColmayor() {
             className="object-contain"
             unoptimized
           />
-          <p className="text-xs leading-relaxed" style={{ color: "#8fa8b8" }}>
+          <p className="text-xs leading-relaxed text-colmayor-muted">
             Institución Universitaria Colmayor adscrita a la Alcaldía de Medellín
           </p>
           {/* Contact */}
           <ul className="flex flex-col gap-2 text-xs">
             <li className="flex items-start gap-2">
-              <Phone size={14} className="mt-0.5 flex-shrink-0" style={{ color: "#e9a800" }} />
+              <Phone size={14} className="mt-0.5 flex-shrink-0 text-colmayor-gold" />
               <span>Línea gratuita: 01 8000 415 380</span>
             </li>
             <li className="flex items-start gap-2">
-              <Phone size={14} className="mt-0.5 flex-shrink-0" style={{ color: "#e9a800" }} />
+              <Phone size={14} className="mt-0.5 flex-shrink-0 text-colmayor-gold" />
               <span>Conmutador: +57 (604) 444 56 11</span>
             </li>
             <li className="flex items-start gap-2">
-              <Printer size={14} className="mt-0.5 flex-shrink-0" style={{ color: "#e9a800" }} />
+              <Printer size={14} className="mt-0.5 flex-shrink-0 text-colmayor-gold" />
               <span>FAX: +57 (4) 421 99 47</span>
             </li>
             <li className="flex items-start gap-2">
-              <Mail size={14} className="mt-0.5 flex-shrink-0" style={{ color: "#e9a800" }} />
+              <Mail size={14} className="mt-0.5 flex-shrink-0 text-colmayor-gold" />
               <a
                 href="mailto:colmayor@colmayor.edu.co"
-                className="hover:underline"
-                style={{ color: "#8fa8b8" }}
+                className="text-colmayor-muted hover:underline"
               >
                 colmayor@colmayor.edu.co
               </a>
             </li>
             <li className="flex items-start gap-2">
-              <MapPin size={14} className="mt-0.5 flex-shrink-0" style={{ color: "#e9a800" }} />
+              <MapPin size={14} className="mt-0.5 flex-shrink-0 text-colmayor-gold" />
               <span>Carrera 78 # 65-46 Bloque Fundacional Piso 1. Medellín – Antioquia – Colombia</span>
             </li>
           </ul>
@@ -80,7 +79,7 @@ export function FooterColmayor() {
 
         {/* Links col 1 */}
         <div>
-          <h3 className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: "#e9a800" }}>
+          <h3 className="text-xs font-bold uppercase tracking-widest mb-3 text-colmayor-gold">
             Institucional
           </h3>
           <ul className="flex flex-col gap-2">
@@ -90,8 +89,7 @@ export function FooterColmayor() {
                   href={l.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-xs hover:underline transition-colors"
-                  style={{ color: "#8fa8b8" }}
+                  className="text-xs text-colmayor-muted hover:underline transition-colors hover:text-slate-200"
                 >
                   {l.label}
                 </a>
@@ -102,7 +100,7 @@ export function FooterColmayor() {
 
         {/* Links col 2 */}
         <div>
-          <h3 className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: "#e9a800" }}>
+          <h3 className="text-xs font-bold uppercase tracking-widest mb-3 text-colmayor-gold">
             Servicios
           </h3>
           <ul className="flex flex-col gap-2">
@@ -112,8 +110,7 @@ export function FooterColmayor() {
                   href={l.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-xs hover:underline transition-colors"
-                  style={{ color: "#8fa8b8" }}
+                  className="text-xs text-colmayor-muted hover:underline transition-colors hover:text-slate-200"
                 >
                   {l.label}
                 </a>
@@ -124,7 +121,7 @@ export function FooterColmayor() {
 
         {/* Links col 3 */}
         <div>
-          <h3 className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: "#e9a800" }}>
+          <h3 className="text-xs font-bold uppercase tracking-widest mb-3 text-colmayor-gold">
             Legal
           </h3>
           <ul className="flex flex-col gap-2">
@@ -134,8 +131,7 @@ export function FooterColmayor() {
                   href={l.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-xs hover:underline transition-colors"
-                  style={{ color: "#8fa8b8" }}
+                  className="text-xs text-colmayor-muted hover:underline transition-colors hover:text-slate-200"
                 >
                   {l.label}
                 </a>
@@ -146,10 +142,7 @@ export function FooterColmayor() {
       </div>
 
       {/* Bottom bar */}
-      <div
-        className="border-t px-6 py-4 text-center text-xs"
-        style={{ borderColor: "#3d4f62", color: "#637d90" }}
-      >
+      <div className="border-t border-colmayor-footer-border px-6 py-4 text-center text-xs text-colmayor-footer-note">
         © Todos los derechos reservados Institución Universitaria Colmayor.
         Carrera 78 # 65-46 Bloque Fundacional Piso 1. Medellín – Antioquia – Colombia
       </div>
