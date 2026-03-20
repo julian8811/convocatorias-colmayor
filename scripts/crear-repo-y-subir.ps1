@@ -29,5 +29,6 @@ git push -u origin master
 if ($LASTEXITCODE -eq 0) {
   Write-Host ""
   Write-Host "Listo. Activa GitHub Pages: Repo → Settings → Pages → Source: GitHub Actions" -ForegroundColor Cyan
-  Write-Host "URL del sitio: https://$(gh api user -q .login).github.io/$repo/" -ForegroundColor Cyan
+  $login = gh api user --jq ".login"
+  Write-Host "URL del sitio: https://${login}.github.io/$repo/" -ForegroundColor Cyan
 }
